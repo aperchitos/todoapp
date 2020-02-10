@@ -95,5 +95,12 @@ textarea {
         outline: none;
         box-shadow: 0 0 0 0.15em rgba($black,.1);
     }
+
+    + label {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+    }
 }
 

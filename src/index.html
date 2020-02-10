@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Simple Todo Application">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Todo App</title>
+
+    <link rel="preload" href="js/worker.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="js/todo-app.js" as="script">
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
 </head>
 <body>
@@ -20,9 +26,17 @@
                 <p class="description">To get started, add some items to your list:</p>
 
                 <div class="create-todo-form">
-                    <input id="addTodoInput" class="create-todo-input" type="text" placeholder="I want to do...">
-                    <button id="addTodoButton" class="button-icon button-colored--gray create-todo-button">
-                        <i class="icon fa fa-plus"></i>
+                    <input 
+                        id="add-todo-input"  
+                        type="text" 
+                        placeholder="I want to do...">
+                    <label for="add-todo-input">Add todo</label>
+
+                    <button 
+                        id="add-todo-button" 
+                        aria-label="Add todo"
+                        class="button-icon button-colored--gray create-todo-button">
+                        <i aria-hidden="true" class="icon fa fa-plus"></i>
                     </button>
                 </div>
             </div>
@@ -33,7 +47,11 @@
 
         <div id="modal" class="modal">
             <div class="modal-content">
-                <button class="modal-button-cancel modal-button-cancel--icon"><i class="icon fa fa-times"></i></button>
+                <button 
+                    aria-label="Close modal"
+                    class="modal-button-cancel modal-button-cancel--icon">
+                    <i aria-hidden="true" class="icon fa fa-times"></i>
+                </button>
 
                 <div id="modal-text" class="modal-text"></div>
 
@@ -46,7 +64,7 @@
     </div>
 
     <footer>
-        <span>Just Another Footer <i class="far fa-smile-beam"></i></span>
+        <span>Just Another Footer</span>
     </footer>
 </body>
 </html>

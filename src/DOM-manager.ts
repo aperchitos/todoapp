@@ -6,11 +6,11 @@ import { States } from "./const/states.enum";
 // Class for DOM manipulations (get/set/add/remove elements/props)
 export class DOMManager {
     public get addTodoInput() {
-        return <HTMLInputElement>this.getElementById('addTodoInput');
+        return <HTMLInputElement>this.getElementById('add-todo-input');
     }
 
     public get addTodoButton() {
-        return <HTMLButtonElement>this.getElementById('addTodoButton');
+        return <HTMLButtonElement>this.getElementById('add-todo-button');
     }
 
     public get modal() {
@@ -64,7 +64,7 @@ export class DOMManager {
         // Create todo element
         const element = <HTMLElement>document.createElement('li');
         element.id = todo.id;
-        element.innerHTML = getTodoTemplate(todo.text);
+        element.innerHTML = getTodoTemplate(todo.text, todo.id);
         element.classList.add('todos-element');
 
         // Append block to the parent element
