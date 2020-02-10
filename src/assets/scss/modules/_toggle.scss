@@ -1,0 +1,18 @@
+.toggle {
+    width: 1.7em;
+    height: 1.5em;
+    margin-right: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background: $gray-1;
+    font-size: $font-size-l;
+    border-radius: $border-radius-s;
+
+    i {
+        opacity: 0;
+        transform: scale(0);
+        transition: $transition;
+    }
+}

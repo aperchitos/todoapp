@@ -1,0 +1,22 @@
+.create-todo {
+    display: flex;
+    padding: 1.5em;
+    border: $border;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: $border-radius;
+
+    &-form {
+        display: flex;
+    }
+
+    &-button {
+        margin-left: 1em;
+    }
+
+    .description {
+        margin-bottom: 1em;
+    }
+}

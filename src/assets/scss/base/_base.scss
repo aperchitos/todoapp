@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: $dark;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    background: $white;
+    font-family: Lato, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: $font-size-xl;
+
+    i {
+        color: $white;
+        padding: 0.3em;
+        background: $dark;
+        margin-right: 0.5em;
+        font-size: $font-size-s;
+        border-radius: $border-radius-s;
+    }
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    font-size: $font-size-l;
+}
+
+p {
+    margin-bottom: 0.2em;
+    font-size: $font-size-s;
+}
+
+button {
+    color: $dark;
+    outline: none;
+    cursor: pointer;
+    border: $border;
+    padding: .4em 1em;
+    background: $white;
+    transition: $transition;
+    font-size: $font-size-xs;
+    border-radius: $border-radius;
+
+    &:disabled {
+        background: $gray-2;
+    }
+}
+
+input,
+textarea {
+    outline: none;
+    color: $gray-1;
+    padding: .6em;
+    border: $border;
+    font-size: $font-size-s;
+    border-radius: $border-radius;
+
+    &:disabled {
+        border: none;
+        cursor: pointer;
+        background: $white;
+    }
+    
+    &::placeholder {
+        color: $gray-3;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.15em rgba($black,.1);
+    }
+}
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Todo App</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                <i class="icon fa fa-list-ul"></i>
+                <span>Just Another Todo App</span>
+            </h1>
+        </header>
+    
+        <section id="container">
+            <div class="create-todo">
+                <h2>Welcome!</h2>
+                <p class="description">To get started, add some items to your list:</p>
+
+                <div class="create-todo-form">
+                    <input id="addTodoInput" class="create-todo-input" type="text" placeholder="I want to do...">
+                    <button id="addTodoButton" class="button-icon button-colored--gray create-todo-button">
+                        <i class="icon fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <ul id="todos" class="todos"></ul>
+            <ul id="todos-completed" class="todos todos-completed"></ul>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <button class="modal-button-cancel modal-button-cancel--icon"><i class="icon fa fa-times"></i></button>
+
+                <div id="modal-text" class="modal-text"></div>
+
+                <div class="modal-footer">
+                    <button id="modal-button-confirm" class="button-colored--gray modal-button">Confirm</button>
+                    <button class="modal-button-cancel button-colored--red modal-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>Just Another Footer <i class="far fa-smile-beam"></i></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.button {
+    &-colored {
+        &:hover {
+            background: $gray-3;
+        }
+
+
+        &--gray {
+            border: none;
+            color: $white;
+            background: $gray-1;
+
+            &:hover {
+                background: rgba($gray-1, .8);
+            }
+        }
+
+        &--red {
+            border: none;
+            color: $white;
+            background: $red;
+
+            &:hover {
+                background: rgba($red, .8);
+            }
+        }
+
+
+        &:disabled {
+            background: $gray-2;
+        }
+    }
+
+    &-icon {
+        padding: 0;
+        width: 2.5em;
+        height: 2.5em;
+        font-size: $font-size-m;
+    }
+}

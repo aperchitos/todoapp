@@ -1,0 +1,23 @@
+header,
+footer {
+    width: 100%;
+    padding: 1.5em; 
+    background: $gray; 
+    text-align: center;
+}
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    margin: 2em 1em;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+}

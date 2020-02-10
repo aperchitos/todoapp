@@ -1,0 +1,44 @@
+.is-edit {
+    .todos-element {
+        &-content {
+            .toggle {
+                display: none; 
+            }
+        }
+
+        &-toggle {
+            display: none;
+        }
+
+        &-edit {
+            display: flex;
+        }
+
+        &-actions {
+            opacity: 1;
+
+            .button-icon {
+                opacity: .9;
+            }
+        }
+    }
+}
+
+.is-empty {
+    &.todos {
+        display: none;
+    }
+}
+
+.is-active {
+    &.modal {
+        opacity: 1;
+        z-index: 1000;
+    }
+}
+
+.is-cancel-modal {
+    #modal-button-confirm {
+        display: none;
+    }
+}
